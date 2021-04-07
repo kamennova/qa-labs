@@ -17,14 +17,14 @@ describe('tests lab3', () => {
         cy.url().then(url => expect(url).to.equal("https://www.pinterest.com/")); // didn't redirect to user page
     });
 
-    it('find contact page link', () => {
+    /*it('find contact page link', () => {
         cy.visit('https://www.pinterest.com');
         cy.get('a[href*=contact]').then((elem) => {
             if (!elem) {
                 throw new Error("test fails here")
             }
         })
-    });
+    });*/
 
     it('privacy policy / confidentiality links', () => {
         cy.visit('https://www.pinterest.com');
