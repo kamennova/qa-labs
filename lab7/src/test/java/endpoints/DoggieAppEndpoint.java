@@ -54,6 +54,14 @@ public class DoggieAppEndpoint {
                 .then().extract().response();
     }
 
+    public Response getUserByEmail(String email){
+        return given()
+                .pathParam("email", email)
+                .when()
+                .get(Config.USER_BY_EMAIL)
+                .then().extract().response();
+    }
+
     public Response deleteUserById(Long id) {
         return given()
                 .pathParam("id", id)

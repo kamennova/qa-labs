@@ -8,5 +8,6 @@ public class Config {
     public static final String DELETE_USER = "/users/{id}";
     public static final String DOG_BY_ID = "/dogs/{id}";
     public static final String CREATE_ROUTE = "/routes";
+    public static final String USER_BY_EMAIL = "/users/{email}";
 
 }
